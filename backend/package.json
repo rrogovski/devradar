@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "description": "Backend da aplicação DevRadar desenvolvida na Semana OmniStack#10",
+  "version": "1.0.0",
+  "author": "Rodrigo Rogovski <rfrogovski@gmail.com>",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrogovski/devradar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rrogovski/devradar/issues"
+  },
+  "homepage": "https://github.com/rrogovski/devradar#readme",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.7"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "nodemon": "^2.0.2"
+  }
+}
