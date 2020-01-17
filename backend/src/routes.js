@@ -9,7 +9,7 @@ routes.get('/', (req, res) => res.json({ message: `Fala Dev! :D -- Esse é o pro
 routes.get('/devs', DevController.index);
 routes.get('/search', SearchController.index);
 routes.post('/devs', DevController.store);
-routes.put('/devs', DevController.update);
-routes.delete('/devs', DevController.destroy);
+routes.put('/devs/:_id', DevController.update);
+routes.delete('/devs/:_id', DevController.destroy);
 
 module.exports = routes;
