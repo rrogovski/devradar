@@ -43,7 +43,7 @@ Open ```.env.example``` and enter necessary config for REACT_APP_API_URL.
 
 ```
 $ yarn install
-yarn start
+$ yarn start
 ```
 
 #### [Rocketseat] (https://rocketseat.com.br)
