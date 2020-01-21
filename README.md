@@ -1,5 +1,5 @@
 # Dev Radar
-Project developed on the OmniStack#10 week by @Rocketseat
+Project developed on the OmniStack#10 week @Rocketseat
 Node.js + ReactJS + React Native.
 
 ## Screenshots
