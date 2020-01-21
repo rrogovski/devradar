@@ -55,12 +55,12 @@ yarn start
 * You need help customizing? You have an awesome project and you need to hire a coder? hit me up with a message my email address is indicated on my [Github Profile] (https://github.com/rrogovski) OR send me a message on Telegram: **@rrogovski(https://t.me/rrogovski)**
 
 
-## Deploy to heroku
+## Deploy to ?
 
-[![Deploy](#)](#)
+[![Deploy Comming soon](#)](#)
 
 1. Comming soon
-```
+
 
 ## Contributing
 
