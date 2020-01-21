@@ -40,13 +40,20 @@ li.dev-item p {
   margin: 10px 0;
 }
 
-li.dev-item a {
+li.dev-item .buttons {
+  display: flex;
+}
+
+.icon, li.dev-item a {
   color: #8e4dff;
   font-size: 14px;
   text-decoration: none;
+  margin: 5px;
   transition: color 0.5s;
+  transition: transform 0.5s;
 }
 
-li.dev-item a:hover {
+.icon:hover, li.dev-item a:hover {
   color: #5a2ea6;
+  transform: scale(1.3);
 }

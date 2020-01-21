@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+// import { css } from "@emotion/core";
+import SyncLoader from "react-spinners/SyncLoader";
 import api from './services/api';
 
 import './global.css';
@@ -25,10 +27,21 @@ function App() {
   }, []);
 
   async function handleAddDev(data) {
-    const response = await api.post('/devs', data);
-
     setLoading(true);
+    const response = await api.post('/devs', data);
     setDevs([...devs, response.data.dev]);
+    // setTimeout(setDevs([...devs, response.data.dev]), 20000);
+    setLoading(false);
+  }
+
+  function handleDeleteDev(dev) {
+    setLoading(true);
+    setTimeout(console.log("esperando..."), 20000);
+    console.log(`> id dev to del: ${dev._id}`);
+    // const response = await api.delete(`/devs/${dev._id}`);
+    // console.log(response);
+    setDevs(devs.filter( d => d._id !== dev._id));
+    setLoading(false);
   }
 
   return (
@@ -39,8 +52,8 @@ function App() {
       </aside>
       <main>
         <ul>
-          {loading ? (<p>Loading...</p>) : (devs.map(dev => (
-            <DevItem key={dev._id} dev={dev} />
+          {loading ? (<SyncLoader size={"10px"} color={"#7d40e7"}></SyncLoader>) : (devs.map(dev => (
+            <DevItem key={dev._id} dev={dev} handleDeleteDev={handleDeleteDev}/>
           )))}
         </ul>
       </main>
