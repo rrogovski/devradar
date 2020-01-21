@@ -4,7 +4,7 @@ Project developed on the OmniStack#10 week @Rocketseat
 Node.js + ReactJS + React Native.
 
 ## Screenshots
-![Dev Radar Web Screenshot](#)
+![Dev Radar Web Screenshot](https://user-images.githubusercontent.com/10521603/72849318-cf509f00-3c7c-11ea-8445-80cc874372cb.png)
 
 ![Dev Radar Mobile Screenshot](#)
 
